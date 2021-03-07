@@ -75,75 +75,88 @@ namespace ConsoleApp1
                         }.Max()
                         .Item2;
             
-
+                  
+                    
                     Console.WriteLine(("The party with the most votes is:") + win);
                     Console.WriteLine("Please press enter to continue:");
                     Console.ReadLine();
 
-                    brexit_votes = brexit_votes_store;
-                    liberal_democrats_votes = liberal_democrats_votes_store;
-                    labour_votes = labour_votes_store;
-                    conservative_votes = conservative_votes_store;
-                    green_party_votes = green_party_votes_store;
-                    ukip_votes = ukip_votes_store;
-                    change_uk_votes = change_uk_votes_store;
-                    independent_network_votes = independent_network_votes_store;
-                    independent_votes = independent_votes_store;
+                   
+            
+                   
+                  
                     
+                
+                   
+                   
+                   
+             
              
                  
                         if (win == "Brexit") 
                         {
+                            brexit_votes = brexit_votes_store;
                             brexit_meps = (brexit_meps + 1);
                             brexit_votes = (brexit_votes / brexit_meps);
+                          
 
-                        }  
+                    }  
              
                         else if (win == "The liberal democrats")
                         {
-                            liberal_democrats_meps = (liberal_democrats_meps + 1);
+                        liberal_democrats_votes = liberal_democrats_votes_store;
+                        liberal_democrats_meps = (liberal_democrats_meps + 1);
                             liberal_democrats_votes = (liberal_democrats_votes / liberal_democrats_meps);
-                        }
+                         
+                    }
 
                         else if (win == "Labour")
                         {
-                            labour_meps = (labour_meps + 1);
-                            labour_votes = (labour_votes / labour_meps);
-                        }
+                        labour_votes = labour_votes_store;
+                        labour_meps = (labour_meps + 1);
+                        labour_votes = (labour_votes / labour_meps);
+                       
+                    }
 
                         else if (win == "conservative")
                         {
-                            conservative_meps = (conservative_meps + 1);
+                        conservative_votes = conservative_votes_store;
+                        conservative_meps = (conservative_meps + 1);
                             conservative_votes = (conservative_votes / conservative_meps);
                         }
 
                         else if (win == "the green party")
                         {
-                            green_party_meps = (green_party_meps + 1);
+                        green_party_votes = green_party_votes_store;
+                        green_party_meps = (green_party_meps + 1);
                             green_party_votes = (green_party_votes / green_party_meps);
                         }
 
                         else if (win == "UKIP")
                         {
-                            ukip_meps = (ukip_meps + 1);
+                        ukip_votes = ukip_votes_store;
+                        ukip_meps = (ukip_meps + 1);
                             ukip_votes = (ukip_votes / ukip_meps);
                         }
 
                         else if (win == "change UK")
                         {
-                            change_uk_meps = (change_uk_meps + 1);
+                        change_uk_votes = change_uk_votes_store;
+                        change_uk_meps = (change_uk_meps + 1);
                             change_uk_votes = (change_uk_votes / change_uk_meps);
                         }
 
                         else if (win == "the independent network")
                         {
-                            independent_network_meps = (independent_network_meps + 1);
+                        independent_network_votes = independent_network_votes_store;
+                        independent_network_meps = (independent_network_meps + 1);
                             independent_network_votes = (independent_network_votes / independent_network_meps);
                         }
 
                         else if (win == "independent")
                         {
-                            independent_meps = (independent_meps + 1);
+                        independent_votes = independent_votes_store;
+                        independent_meps = (independent_meps + 1);
                             independent_votes = (independent_votes / independent_meps);
                         }
 
