@@ -17,7 +17,7 @@ namespace ConsoleApp2
 
 
         }
-        public class Store
+        private class Store
         {
             private string Party { get; set; }
             private int Votes { get; set; }
@@ -26,7 +26,15 @@ namespace ConsoleApp2
                 Party = party;
                 Votes = votes;
             }
-        Store brexit_votes_astore = new Store("brexit votes", 452321);
+            Store brexit_votes_astore = new Store("brexit votes", 452321);
+            Store liberal_democrats_votes_astore = new Store("liberal democrats votes", 203989);
+            Store labour_votes_astore = new Store("labour votes", 164682);
+            Store conservative_votes_astore = new Store("conservative votes", 126138);
+            Store green_party_votes_astore = new Store("green party votes", 124630);
+            Store ukip_votes_astore = new Store("ukip votes", 58198);
+            Store change_uk_votes_astore = new Store("change UK votes", 41117);
+            Store independent_network_votes_astore = new Store("independent network votes", 7641);
+            Store independent_votes_astore = new Store("independent votes", 4511);
 
         }
         static void Main(string[] args)
@@ -225,3 +233,6 @@ namespace ConsoleApp2
         }
     }
 }
+    
+
+
